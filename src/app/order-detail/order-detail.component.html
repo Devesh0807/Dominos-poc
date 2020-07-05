@@ -1,0 +1,353 @@
+<div class="order-details">
+    <!-- Left Panel Starts -->
+    <div class="leftpanel">
+      <div class="logo">
+        <img src="../../assets/images/dominos_logo.png" alt="Dominos Logo" />
+      </div>
+      <div class="menu">
+        <a href="#" class="active">
+          <img src="../../assets/images/create-order.png" alt="Dominos Logo" />
+          Create Order</a
+        >
+      </div>
+    </div>
+    <!-- Left Panel Ends -->
+    <!-- Order Panel Starts -->
+    <div class="orderpanel">
+      <div class="ordernumber-search">
+        <div class="ordernumber-time">
+          <h3>Order # 391</h3>
+          <div class="time">Opened 5:00 ago</div>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Enter Contact number" />
+        </div>
+      </div>
+      <!-- Order Items Starts -->
+      <div #orders class="orders">
+        <div *ngIf="dblChe" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Dbl_Che Marg <span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">240.00</div>
+          </div>
+          <div *ngIf="farmhouse" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Farmhouse <span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">240.00</div>
+          </div>
+          <div *ngIf="pepperPaneer" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Pepper Paneer <span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">240.00</div>
+          </div>
+        <div *ngIf="deluxeVeggie" class="ordersitems">
+          <div class="incrementinput">
+            <a href="#">+</a>
+            <input type="number" placeholder="1" />
+            <a href="#">-</a>
+          </div>
+          <div class="orderdetails">Deluxe Veggie <span>15 Inch Large</span></div>
+          <div #orderAmt class="orderamt">240.00</div>
+        </div>
+        <div *ngIf="mexicanGreen" class="ordersitems">
+          <div class="incrementinput">
+            <a href="#">+</a>
+            <input type="number" placeholder="1" />
+            <a href="#">-</a>
+          </div>
+          <div class="orderdetails">Mexican Green <span>15 Inch Large</span></div>
+          <div #orderAmt class="orderamt">240.00</div>
+        </div>
+        <div *ngIf="pizzaPizza" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Pizza Pizza <span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">240.00</div>
+          </div>
+          <div *ngIf="freshVeggie" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Fresh Veggie <span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">240.00</div>
+          </div>
+          <div *ngIf="paneerMakhani" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Paneer Makhani <span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">240.00</div>
+          </div>
+          <div *ngIf="cornNcheese" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Corn and Cheese<span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">240.00</div>
+          </div>
+          <div *ngIf="pmOnion" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">PM Onion <span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">240.00</div>
+          </div>
+          <div *ngIf="pmGoldenCorn" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">PM Golden Corn<span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">240.00</div>
+          </div>
+          <div *ngIf="pmPaneerpizza" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">PM Paneer Pizza <span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">240.00</div>
+          </div>
+        <div *ngIf="pmTomato" class="ordersitems">
+          <div class="incrementinput">
+            <a href="#">+</a>
+            <input type="number" placeholder="1" />
+            <a href="#">-</a>
+          </div>
+          <div class="orderdetails">PM Tomato<span>15 Inch Large</span></div>
+          <div #orderAmt class="orderamt">150.00</div>
+        </div>
+        <div *ngIf="pmCheesy" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">PM Cheesy<span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">150.00</div>
+          </div>
+          <div *ngIf="golderDelight" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Golder Delight<span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">150.00</div>
+          </div>
+          <div *ngIf="nvgDominato" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">NVG Dominato<span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">150.00</div>
+          </div>
+          <div *ngIf="nvgSupreme" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Nvg Supreme<span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">150.00</div>
+          </div>
+          <div *ngIf="chickenFiesta" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Chicken Fiesta<span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">150.00</div>
+          </div>
+        <div *ngIf="pepperBbq" class="ordersitems">
+          <div class="incrementinput">
+            <a href="#">+</a>
+            <input type="number" placeholder="1" />
+            <a href="#">-</a>
+          </div>
+          <div class="orderdetails">Pepper BBQ <span>15 Inch Large</span></div>
+          <div #orderAmt class="orderamt">150.00</div>
+        </div>
+        <div *ngIf="afronPPVeg" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Afron PP Veg <span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">150.00</div>
+          </div>
+          <div *ngIf="pmChickenSausage" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">PM Chicken Sausage <span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">150.00</div>
+          </div>
+          <div *ngIf="chickenSausage" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Chicken Sausage <span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">150.00</div>
+          </div>
+          <div *ngIf="tomatoandCheese" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Tomato and Cheese<span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">150.00</div>
+          </div>
+          <div *ngIf="jamxjrxVeg" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">JAMXJRX Veg<span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">150.00</div>
+          </div>
+          <div *ngIf="tanduriPaneer" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Tandoori Paneer<span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">100.00</div>
+          </div>
+          <div *ngIf="ausiBbqVeg" class="ordersitems">
+            <div class="incrementinput">
+              <a href="#">+</a>
+              <input type="number" placeholder="1" />
+              <a href="#">-</a>
+            </div>
+            <div class="orderdetails">Ausi BBQ Veg<span>15 Inch Large</span></div>
+            <div #orderAmt class="orderamt">100.00</div>
+          </div>
+
+      </div>
+      <!-- Order Items Ends -->
+      <div class="total">
+        <div class="totalcolumn">
+          <div class="totaltxt">Subtotal</div>
+          <div class="amt">₹ {{subTotal}}</div>
+        </div>
+        <div class="totalcolumn">
+          <div class="totaltxt">Tax</div>
+          <div class="amt">₹ {{taxAmt}}</div>
+        </div>
+      </div>
+      <div class="iconsets">
+        <a href="#"><img src="../../assets/images/cross.png" alt="" /></a>
+        <a href="#"><img src="../../assets/images/discount.png" alt="" /></a>
+        <a href="#"><img src="../../assets/images/print.png" alt="" /></a>
+        <a href="#"><img src="../../assets/images/save.png" alt="" /></a>
+      </div>
+      <div (click)="onSuccess()" class="payamt">
+        <div class="totaltxt">Pay</div>
+        <div class="amt">₹ {{total}}</div>
+      </div>
+    </div>
+    <!-- Order Panel Ends -->
+    <!-- Items Starts starts -->
+    <div class="itemsdetails">
+      <div class="toptabs">
+        <div class="toptabs-content"><a href="#">Breads</a></div>
+        <div class="toptabs-content"><a href="#">Sides</a></div>
+        <div class="toptabs-content"><a href="#" class="active">Pizza</a></div>
+        <div class="toptabs-content"><a href="#">Beverages</a></div>
+        <div class="toptabs-content"><a href="#">Miscellaneous</a></div>
+        <div class="toptabs-content"><a href="#">Desserts</a></div>
+        <div class="toptabs-content"><a href="#">Combo</a></div>
+      </div>
+  
+      <div (click)="calcSubTotal()" #item class="items">
+        <a (click)="dblChe = !dblChe" [ngClass]="{'selected':dblChe === true}">Dbl_Che Marg</a>
+        <a (click)="farmhouse = !farmhouse" [ngClass]="{'selected':farmhouse === true}">Farmhouse</a>
+        <a (click)="pepperPaneer = !pepperPaneer" [ngClass]="{'selected':pepperPaneer === true}">Pepper Paneer</a>
+        <!-- <a href="#">Mexican Green</a> -->
+        <a (click)="mexicanGreen = !mexicanGreen" [ngClass]="{'selected':mexicanGreen === true}">Mexican Green</a>
+        <a (click)="deluxeVeggie = !deluxeVeggie" [ngClass]="{'selected':deluxeVeggie === true}">Deluxe Veggie</a>
+        <a (click)="pizzaPizza = !pizzaPizza" [ngClass]="{'selected':pizzaPizza === true}">Pizza Pizza</a>
+        <a (click)="freshVeggie = !freshVeggie" [ngClass]="{'selected':freshVeggie === true}">Fresh Veggie</a>
+        <a (click)="paneerMakhani = !paneerMakhani" [ngClass]="{'selected':paneerMakhani === true}">Paneer Makhani</a>
+        <a (click)="cornNcheese = !cornNcheese" [ngClass]="{'selected':cornNcheese === true}">Corn and Cheese</a>
+        <a (click)="pmOnion = !pmOnion" [ngClass]="{'selected':pmOnion === true}">PM Onion</a>
+        <a (click)="pmGoldenCorn = !pmGoldenCorn" [ngClass]="{'selected':pmGoldenCorn === true}">PM Golden Corn</a>
+        <a (click)="pmPaneerpizza = !pmPaneerpizza" [ngClass]="{'selected':pmPaneerpizza === true}">PM Paneer Pizza</a>
+        <a (click)="pmCheesy = !pmCheesy" [ngClass]="{'selected':pmCheesy === true}">PM Cheesy</a>
+        <a (click)="pmTomato = !pmTomato" [ngClass]="{'selected':pmTomato === true}">PM Tomato</a>
+        <a (click)="golderDelight = !golderDelight" [ngClass]="{'selected':golderDelight === true}">Gold Delight</a>
+        <a (click)="nvgDominato = !nvgDominato" [ngClass]="{'selected':nvgDominato === true}">NVG Dominato</a>
+        <a (click)="nvgSupreme = !nvgSupreme" [ngClass]="{'selected':nvgSupreme === true}">Nvg Supreme</a>
+        <a (click)="chickenFiesta= !chickenFiesta" [ngClass]="{'selected':chickenFiesta === true}">Chicken Fiesta</a>
+        <a (click)="pepperBbq = !pepperBbq" [ngClass]="{'selected':pepperBbq === true}">Pepper BBQ</a>
+        <!-- <a href="#">Pepper BBQ</a> -->
+        <a (click)="afronPPVeg = !afronPPVeg" [ngClass]="{'selected':afronPPVeg === true}">Afron PP Veg</a>
+        <a (click)="pmChickenSausage = !pmChickenSausage" [ngClass]="{'selected':pmChickenSausage === true}">PM Chicken Sausage</a>
+        <a (click)="chickenSausage = !chickenSausage" [ngClass]="{'selected':chickenSausage === true}">Chicken Sausage</a>
+        <a (click)="tomatoandCheese = !tomatoandCheese" [ngClass]="{'selected':tomatoandCheese === true}">Tomato and Cheese</a>
+        <a (click)="jamxjrxVeg = !jamxjrxVeg" [ngClass]="{'selected':jamxjrxVeg === true}">JAMX JRK Veg</a>
+        <a (click)="tanduriPaneer = !tanduriPaneer" [ngClass]="{'selected':tanduriPaneer === true}">Tandoori Paneer</a>
+        <a (click)="ausiBbqVeg = !ausiBbqVeg" [ngClass]="{'selected':ausiBbqVeg === true}">Ausi BBQ Veg</a>
+        <!-- <a href="#" class="selected">PM Tomato</a> -->
+      </div>
+      <div class="itemfooter">
+        <div class="empname">Rajesh Mehra</div>
+        <div class="datetime">7/7/2019 <span>|</span> 20:30</div>
+      </div>
+    </div>
+    <!-- Items Starts Ends -->
+    <div *ngIf="isSuccess">
+        <div class="overlay"></div>
+  
+        <div class="lightbox" id="lightbox-1">
+          <div class="modalheader">
+            <span>Success</span> <a href="#" class="close"></a>
+          </div>
+          <div class="modalbody">
+            <img src="../../assets/images/tick.png" alt="" />
+            <h4>Order Created</h4>
+            <h3>Payment of <strong>₹ {{total}}</strong> received</h3>
+            <a routerLink="/modal" class="btn">Done</a>
+          </div>
+        </div>
+    </div>
+    
+  </div>
+  

@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/scss/reset.scss";
+@import "assets/scss/settings.scss";
+@import "assets/scss/grid.scss";
+.overlay {
+    background: rgba($color: #000000, $alpha: 0.8);
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+}
+
+.lightbox {
+    background: $modalbg;
+    border-radius: 4px;
+    opacity: 1;
+    /*     visibility: hidden; */
+    width: 400px;
+
+    position: absolute;
+    left: calc(50% - 200px);
+    z-index: 99;
+    transition: all 0.8s ease;
+    .modalheader {
+        background: $brand-color;
+        @include grid(0, auto, 13px);
+        padding: 14px 24px;
+        font-weight: 600;
+        color: $white;
+        font-size: 17px;
+        line-height: 23px;
+        .close {
+            cursor: pointer;
+            display: block;
+            &::after {
+                content: "";
+                background: $white;
+                width: 2px;
+                height: 20px;
+                border-radius: 3px;
+                transform: rotate(45deg);
+                position: absolute;
+                top: 16px;
+            }
+            &::before {
+                position: absolute;
+                top: 16px;
+                content: "";
+                background: $white;
+                width: 2px;
+                height: 20px;
+                border-radius: 3px;
+                transform: rotate(135deg);
+            }
+        }
+    }
+    .modalbody {
+        min-height: 200px;
+    }
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+}
