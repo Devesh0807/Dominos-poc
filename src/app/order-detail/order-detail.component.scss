@@ -145,6 +145,17 @@
                 }
             }
         }
+        .orders::-webkit-scrollbar {
+            width: 5px;
+          }
+           
+          .orders::-webkit-scrollbar-track {
+            background: #ddd;
+          }
+           
+          .orders::-webkit-scrollbar-thumb {
+            background: #666; 
+          }
         .total {
             height: 70px;
             background: rgba($white, 0.05);
